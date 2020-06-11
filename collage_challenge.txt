@@ -1,0 +1,6 @@
+function test(width, height, maxdim){
+	var scale = Math.min(maxdim/width,maxdim/height);
+	console.log(scale);
+	return [scale * width, scale * height]
+}
+test(2500, 4500, 600)
